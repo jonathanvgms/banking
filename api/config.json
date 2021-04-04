@@ -1,0 +1,21 @@
+{
+    "database": {
+        "connection": {
+            "host": "localhost",
+            "database": "enterprise",
+            "user": "root",
+            "password": "telesca1234"
+        },
+        "tables": [
+            {
+                "name": "business",
+                "columns": [
+                    "INCORP_DATE",
+                    "NAME",
+                    "STATE_ID",
+                    "CUST_ID"
+                ]
+            }
+        ]
+    }
+}
