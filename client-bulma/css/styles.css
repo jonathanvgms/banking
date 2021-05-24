@@ -1,0 +1,40 @@
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+.show_transition {
+  visibility: visible;
+
+  transition-property: visibility;
+  transition-duration: 5s;
+  transition-delay: 1s;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.notification-style{
+	display: block;
+	position: absolute;
+  width:400px;
+  top: 10%;
+  left: 72%;
+  /* box-shadow: 0 2px 0 rgba(0,0,0,0.2); */
+}
+
+.notification-animation {
+	animation: notification-animation-open 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes notification-animation-open {
+  0%   { transform: translate(0,-150px); }
+  10%  { transform: translate(0,20px);   }
+  12%  { transform: translate(0,22px);   }
+  16%  { transform: translate(0,20px);   }
+  80%  { transform: translate(0,20px);   }
+  85%  { transform: translate(0,25px);   }
+  100% { transform: translate(0,-150px); }
+}

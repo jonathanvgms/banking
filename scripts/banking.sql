@@ -1,6 +1,6 @@
-create schema enterprise;
+create schema banking;
 
-use enterprise; 
+use banking; 
 
     create table ACCOUNT (
         ACCOUNT_ID integer not null auto_increment,

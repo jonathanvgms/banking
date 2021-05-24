@@ -2,7 +2,7 @@
     "database": {
         "connection": {
             "host": "localhost",
-            "database": "enterprise",
+            "database": "banking",
             "user": "root",
             "password": "telesca1234"
         },

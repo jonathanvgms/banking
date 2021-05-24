@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+const cors = require('cors')
+const bodyParser = require('body-parser')
 const port = process.env.port || 3000;
 const { format, transports, loggers } = require('winston');
 const { combine, timestamp, label, printf } = format;
@@ -21,6 +23,9 @@ loggers.add('logger', {
 })
 
 const logger = loggers.get('logger')
+
+app.use(bodyParser.json())
+app.use(cors())
 
 //endpoints
 app.use('/api', require('./controllers/business'));

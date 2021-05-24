@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Banking</title>
+</head>
+
+<body>
+    <div class="container mx-auto min-h-screen px-4">
+        <div class="bg-white py-4 px-6 text-gray-400 font-bold justify-start shadow-md">
+            <div class="space-x-4">
+                <div class="inline-block">
+                    <a href="index.html" class="hover:text-gray-700">Banking</a>
+                </div>
+                <div class="inline-block">
+                    <a href="branch.html" class="hover:text-gray-700">Branch</a>
+                </div>
+                <div class="inline-block">
+                    <a href="#" class="text-gray-700">Account</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-4 my-2">
+            <div class="py-2 col-span-1">
+                <input type="text"
+                    class="placeholder-gray-400 px-2 py-2 min-w-0 w-60 border-gray-200 border shadow-md rounded"
+                    placeholder="Buscar..">
+            </div>
+            <div class="col-start-4 col-span-1 py-2">
+                <button
+                    class=" text-gray-400 rounded font-bold text-center min-w-full min-h-full border hover:bg-gray-200  hover:text-gray-700">Add</button>
+            </div>
+        </div>
+
+        <div class="shadow rounded my-2">
+            <table id="table" class="min-w-full bg-white">
+
+            </table>
+        </div>
+    </div>
+    <script src="./js/account.js"></script>
+</body>
+
+</html>
